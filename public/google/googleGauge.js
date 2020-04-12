@@ -4814,8 +4814,7 @@
 				} 
 			</style> 
 			<div id="chart_div"></div>
-		`;
-
+        `;
     class GoogleGauge extends HTMLElement {
         constructor() {
             super();
@@ -4841,7 +4840,7 @@
             console.log("onCustomWidgetAfterUpdate")
             console.log("this._props prop = ", this._props);
             this._props = {...this._props, ...changedProperties };
-
+            var test = this._props.value
             var ctx = this.shadowRoot.getElementById('chart_div');
 
             var myProps = this._props
@@ -4881,9 +4880,49 @@
 
                 var chart = new google.visualization.Gauge(ctx);
                 chart.draw(data, options);
-                const myRequest = new Request('https://14936b00.ngrok.io/twilioDemo');
-                console.log('myRequest');
-                console.log(myRequest);
+                // if (props.value > 100) {
+
+                //     var url = 'https://25c04c0b.ngrok.io/twilioDemo';
+                //     var params = {
+                //         method: 'POST',
+                //         mode: 'no-cors',
+                //         headers: new Headers({
+                //             'Content-Type': 'text/plain'
+                //         }),
+                //         body: 'form'
+                //     };
+                //     fetch(url, params)
+                //         .then(response => response.json)
+                //         .then(data => console.log(data))
+                //         .catch(error => console.error('Hay un error ' + error));
+
+
+                // }
+
+
+                // const myRequest = new Request('https://25c04c0b.ngrok.io/twilioDemo');
+                // if (props.value > 100) {
+                //     var url = 'https://25c04c0b.ngrok.io/twilioDemo';
+                //     var data = { username: 'example' };
+                //     fetch(url, {
+                //             method: 'post',
+                //             headers: {
+                //                 "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                //             },
+                //             body: { username: 'example' }
+                //         }).then(response => {
+                //             console.log('ms ' + response);
+                //             // if (response.status === 200) {
+                //             //     return response.json();
+                //             // } else {
+                //             //     throw new Error('Something went wrong on api server!');
+                //             // }
+                //         })
+                //         .catch(error => {
+                //             console.log('ms3 ');
+                //             console.error(error);
+                //         });
+                // }
 
             }
         }
