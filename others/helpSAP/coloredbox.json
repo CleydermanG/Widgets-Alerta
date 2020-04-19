@@ -4,28 +4,28 @@
     "name": "Colored Box",
     "description": "A colored box",
     "newInstancePrefix": "ColoredBox",
-    "icon": "https://25c04c0b.ngrok.io/static/icon.png",
+    "icon": "https://d5bda31e.ngrok.io/static/icon.png",
     "vendor": "SAP",
     "eula": "",
     "license": "",
     "webcomponents": [{
             "kind": "main",
             "tag": "com-sap-sample-coloredbox",
-            "url": "https://25c04c0b.ngrok.io/static/coloredbox.js",
+            "url": "https://d5bda31e.ngrok.io/static/coloredbox.js",
             "integrity": "",
             "ignoreIntegrity": true
         },
         {
             "kind": "styling",
             "tag": "com-sap-sample-coloredbox-styling",
-            "url": "https://25c04c0b.ngrok.io/static/coloredbox_styling.js",
+            "url": "https://d5bda31e.ngrok.io/static/coloredbox_styling.js",
             "integrity": "",
             "ignoreIntegrity": true
         },
         {
             "kind": "builder",
             "tag": "com-sap-sample-coloredbox-builder",
-            "url": "https://25c04c0b.ngrok.io/static/coloredbox_builder.js",
+            "url": "https://d5bda31e.ngrok.io/static/coloredbox_builder.js",
             "integrity": "",
             "ignoreIntegrity": true
         }

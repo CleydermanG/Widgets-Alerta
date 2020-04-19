@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 const twilio = require('twilio');
-const client = twilio('AC31aab9b247731061b04e29819003c2ae', 'd7754956a7e09e30c4ee46ab2472bebb');
+const client = twilio('ACab0f72ab2a1ef8b20809ab2a2e255fc6', '96fb11afddc994548a281f97f1148930');
 app.use('/static', express.static(__dirname + '/public/google'));
 app.use('/static', express.static(__dirname + '/others/helpSAP'));
 app.get('/', function(req, res) {
@@ -21,11 +21,10 @@ app.get('/twilioDemo', function(req, res) {
 
 function message(phone) {
     return new Promise((resolve, reject) => {
-
         client.messages.create({
             from: 'whatsapp:+14155238886',
             to: 'whatsapp:+' + phone,
-            body: 'Alerta SAC ⚠'
+            body: 'Modificación Detectada ⚠'
         }).then(mensaje => {
             resolve(mensaje.sid);
         }).catch(err => {
@@ -37,8 +36,9 @@ function message(phone) {
 
 async function actividad(req, res) {
     try {
-        // var phone = ["573183027649", "573123845845", "573206873075"];
-        var phone = ["573123845845"];
+        var phone = ["573183027649", "573123845845", "573206873075", "573206939387"];
+        //var phone = ["573123845845", "573124939218"];
+        //var phone = ["573052350862", "573123845845", "573124939218"];
         for (let i = 0; i < phone.length; i++) {
             var mns = await message(phone[i]);
         }
