@@ -4867,14 +4867,14 @@
                         position: 'top'
                     },
                     min: 0,
-                    max: 280,
-                    yellowFrom: 200,
-                    yellowTo: 250,
-                    redFrom: 250,
-                    redTo: 280,
-                    minorTicks: 5,
+                    max: 10,
+                    minorTicks: 10,
+                    yellowFrom: 6,
+                    yellowTo: 8,
+                    redFrom: 8,
+                    redTo: 9,
                     greenColor: '#109618',
-                    greenTo: 250,
+                    greenTo: 8,
                     greenFrom: 0
                 };
 
@@ -4882,7 +4882,7 @@
                 chart.draw(data, options);
                 // if (props.value > 100) {
 
-                //     var url = 'https://d5bda31e.ngrok.io/twilioDemo';
+                //     var url = 'https://3b347f54.ngrok.io/twilioDemo';
                 //     var params = {
                 //         method: 'POST',
                 //         mode: 'no-cors',
@@ -4900,9 +4900,9 @@
                 // }
 
 
-                // const myRequest = new Request('https://d5bda31e.ngrok.io/twilioDemo');
+                // const myRequest = new Request('https://3b347f54.ngrok.io/twilioDemo');
                 // if (props.value > 100) {
-                //     var url = 'https://d5bda31e.ngrok.io/twilioDemo';
+                //     var url = 'https://3b347f54.ngrok.io/twilioDemo';
                 //     var data = { username: 'example' };
                 //     fetch(url, {
                 //             method: 'post',
